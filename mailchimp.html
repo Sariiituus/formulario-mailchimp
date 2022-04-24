@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mailchimp</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+      <nav>
+        <img
+        src="./styles/images/mailchip-logo.svg"
+        alt="logo"
+        class="mail-logo"/>
+      </nav>
+    <main class="container">
+      <h1 class="title">Welcome to Mailchimp</h1>
+      <p class="line">
+        Find your people. Engage your customers. Build your brand. Do it all <br>
+        with Mailchimp's Marketing Plataform. Already have an account?
+        <a href="#">Log in</a>
+      </p>
+      <form action="">
+        <label for="">Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder=""
+          name="user_email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+          class="form__input"
+        />
+
+        <label for="">Username</label>
+        <input
+          type="text"
+          name="user_name"
+          id="user"
+          minlength="5"
+          maxlength="10"
+          placeholder="entre 5 y 10 caracteres"
+          class="form__input"
+          required
+        />
+
+        <label for="">Password</label>
+        <input
+          type="password"
+          minlength="8"
+          id="pwd"
+          name="user_password"
+          pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+          title="Please include at least 1 uppercase character, 1 lowercase character, 1 number, and 1 special charter"
+          class="form__input"
+          required
+        />
+
+        <button type="submit" class="form__btn form__btn--submit">
+          Sign Up
+        </button>
+        <div class="checkbox-container">
+          <label for="news" class="form__label">
+            I don't want ro receive emails about new <br> Mailchimp products, best
+            practices, or special offers.</label>
+          <input
+            type="checkbox"
+            id="news"
+            name="user_news"
+            class="form__checkbox"/>
+        </div>
+        <p class="terms">
+          By clicking the "Sign Up" button, you are creating a Mailchimp accout,
+          and you agree to Mailchimp's <a href="#">Terms of Use</a>and
+          <a href="#">Privacy Policy</a>
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

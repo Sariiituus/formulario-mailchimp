@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.mail-logo {
+    width: 100px;
+    margin: 50px 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+
+.title {
+    font-size: 50px;
+    margin: 10px 200px;
+}
+
+.line {
+    font-size: 18px;
+    margin: 25px 200px;
+}
+
+/* formulario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    min-width: 20%;
+    margin: 30px 200px;
+}
+
+.form__input {
+    padding: 0.8rem 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.form__btn {
+    width: 250px;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 30px 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 0 0;
+}
+
+
+.form__checkbox {
+    appearance: none;
+    background-color: white;
+    border: 1px solid rgb(70, 70, 70);
+    padding: 0.8rem;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 0.8rem;
+}
+
+
+.form__checkbox:checked::after {
+    display: block;
+    content: "\2714";
+    color: #181818;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+
+.terms {
+    margin: 20px 0px;
+}
+
+
+
+
+
+
+
+
